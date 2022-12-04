@@ -9,15 +9,11 @@ const Footer = () => {
                 <div className='footer-social'>
                     <h4 className='footer-text text-center'>Follow us</h4>
                     <ul className='footer-social-icons'>
-                        <li className='social-icon'>
-                            <a href="https://www.youtube.com/channel/UCNZ5gsEEET6TldC6f4Z9vxg" target={"_blank"}>
-                                <img src={youtube} alt="youtube social" />
-                            </a>
+                        <li className='social-icon'> 
+                            <img src={youtube} alt="youtube social" />
                         </li>
                         <li className='social-icon'>
-                            <a href="https://pt-br.facebook.com/calindratech/" target={"_blank"}>
-                                <img src={facebook} alt="facebook social" />
-                            </a>
+                            <img src={facebook} alt="facebook social" />
                         </li>
                         <li className='social-icon'>
                             <img src={twitter} alt="twitter social" />
