@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url("../assets/fonts/RobotoCondensed-Light.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../assets/fonts/RobotoCondensed-Bold.ttf");
+}
+
+header{
+    height: 15vh;
+}
+.brand__navbar{
+    margin: 0 6%;
+    height: 100%;
+}
+.brand__container{
+    display: flex;
+    justify-content: space-between;
+    color: #846219;
+    align-items: center;
+    height: 100%;
+}
+.brand__item{
+    font-family: 'Roboto-Light';
+}
+.brand__div,.information-side{
+    width: 50%;
+}
+.information-side{
+    margin-top: 100px;
+}
+.information-less{
+    width: 100%;
+}
+.brand__itens{
+    display: flex;
+    justify-content: space-around;
+}
+ .brand__identidade{
+    display: flex;
+    align-items: center;
+}
+
+.ml-2{
+    margin-left: 25px;
+}
+.brand-name{
+    font-size: 41px;
+    font-weight: bold;
+}
+.brand-surname{
+    font-size: 16.2px;
+    margin-bottom: 15px;
+    font-family: 'Roboto-Light';
+    letter-spacing: 5.4px;
+} 
+.brand__item{
+    font-size: 16.2px;
+    font-family: 'Roboto-Light';
+    letter-spacing: 3px;
+}
+.banner,.information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6%;
+    height: 100%;
+}
+.banner-text{
+    color: #716565;
+    font-size: 82.2px;
+    word-spacing: 100vw;
+    text-align: right;
+    font-family: 'Roboto-Bold';
+}
+.banner-side{
+    width: 50%;
+}
+main{
+    background: #E9E9E9;
+    height: 85vh;
+}
+
+.information-container{
+    background: #506FA9;
+}
+.information{
+    padding: 50px;
+}
+.information-metric{
+    filter: brightness(0.5);
+    position: absolute;
+    left: 30%;
+    top: 95%;
+}
+.information-metric{
+    width: 70%;
+    height: 80%;
+}
+.information-text{
+    font-size: 69.2px;
+    color: #FFFFFF;
+    margin-top: 100px;
+    font-family: 'Roboto-Bold';
+}
+.information-subtext{
+    font-size: 48.2px;
+    color: #FFFFFF;
+    width: 45%;
+    margin-top: 30px;
+    font-weight: 100;
+    font-family: 'Roboto-Light';
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+footer{
+    background: #E9E9E9;
+    color: #716565;
+}
+.footer-container{
+    display: flex;
+    padding: 45px 0;
+}
+.footer-social{
+    width: 40%;
+}
+.footer-contact{
+    width: 50%;
+    margin-left: 50px;
+}
+.footer-social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.social-icon{
+    margin: 0 10px;
+}
+.social-icon:hover{
+    opacity: 70%;
+}
+.footer-text{
+    font-size: 27.2px;
+    font-family: 'Roboto-Bold';
+}
+.footer-address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.footer-address li{
+    font-size: 16.2px;
+    font-family: 'Roboto-Regular';
+}
+.brand-mobile-icon{
+    display: none;
+}
+@media only screen and (max-width: 450px) {
+    .brand-mobile-icon{
+        display: block;
+    }
+    .brand-name, .brand-surname, .brand__itens{
+        display: none;
+    }
+    .brand__div:nth-child(3){
+        width: 0;
+    }
+    .brand__identidade {
+        justify-content: center;
+    }
+    .banner-side{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column;
+        height: 100%;
+    }
+    .banner-text{
+        font-size: 10vw;
+        text-align: center;
+    }
+    main{
+        height: 65vh;
+    }
+    .footer-social, .footer-contact{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contact{
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .information{
+        flex-direction: column;
+        padding: 0;
+    }
+    .information-text {
+        font-size: 10vw;
+        margin-top: 35px;
+    }
+    .information-less {
+        margin-top: 0;
+    }
+    .information-subtext {
+        font-size: 10vw;
+        width: 100%;
+    }
+    .information-img{
+        justify-content: center;
+        display: flex;
+    }
+
+    .information-metric{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        filter: brightness(0.5);
+    }
+    .information-subtext{
+        word-break: normal;
+    }
+}
